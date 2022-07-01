@@ -1,10 +1,16 @@
-import React from 'react';
-import Layout from './components/templates/Layout';
+import React from "react";
+import Header from "./components/organisms/Header";
+import Layout from "./components/templates/Layout";
 
 function App() {
   return (
     <Layout>
-      <h1 className='text-3xl'>React Note</h1>
+      <Header>
+        <h1 className="text-3xl">Header</h1>
+      </Header>
+      <main>
+        <h1 className="text-3xl">Main</h1>
+      </main>
     </Layout>
   );
 }
