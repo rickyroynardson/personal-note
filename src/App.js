@@ -1,12 +1,13 @@
 import React from "react";
 import Header from "./components/organisms/Header";
 import Layout from "./components/templates/Layout";
+import HeaderBrand from "./components/atoms/HeaderBrand";
 
 function App() {
   return (
     <Layout>
       <Header>
-        <h1 className="text-3xl">Header</h1>
+        <HeaderBrand />
       </Header>
       <main>
         <h1 className="text-3xl">Main</h1>
