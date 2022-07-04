@@ -3,6 +3,8 @@ import React from "react";
 const Button = (props) => {
   const theme = (() => {
     switch (props.theme) {
+      case "light-gray":
+        return "bg-slate-100 text-slate-800 hover:bg-slate-200";
       default:
         return "bg-sky-500 text-white hover:bg-sky-600";
     }
@@ -19,6 +21,8 @@ const Button = (props) => {
 
   const size = (() => {
     switch (props.size) {
+      case "xs":
+        return "p-2";
       default:
         return "px-6 py-2.5";
     }
