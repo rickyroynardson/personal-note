@@ -1,4 +1,5 @@
 import React, { Children, useEffect, useState } from "react";
+import { Message } from "../atoms";
 
 const NoteList = (props) => {
   const [hasChildren, setHasChildren] = useState(false);
@@ -8,8 +9,14 @@ const NoteList = (props) => {
   }, [props.children]);
 
   return (
-    <div className={`columns-1 sm:columns-2 gap-4 pr-4`}>
-      {hasChildren ? props.children : "Tidak ada catatan"}
+    <div
+      className={`${
+        hasChildren
+          ? "columns-1 sm:columns-2 gap-4 pr-4"
+          : "grid place-items-center h-full"
+      }`}
+    >
+      {hasChildren ? props.children : <Message value="Tidak ada catatan" />}
     </div>
   );
 };

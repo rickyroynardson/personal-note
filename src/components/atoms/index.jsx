@@ -7,6 +7,7 @@ import Tab from "./Button/Tab";
 import Title from "./Text/Title";
 import NoteDate from "./Text/NoteDate";
 import Content from "./Text/Content";
+import Message from "./Text/Message";
 
 export {
   HeaderBrand,
@@ -18,4 +19,5 @@ export {
   Title,
   NoteDate,
   Content,
+  Message,
 };
